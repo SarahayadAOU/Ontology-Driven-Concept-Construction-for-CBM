@@ -1,0 +1,5 @@
+comparison,encoder,mean_auc_diff_manual_minus_ontology,combined_z,combined_p
+manual_vs_ontology_default,supervised,-0.0124,-3.08,0.00209
+manual_vs_ontology_bridged,supervised,-0.0169,-4.34,0.0000139
+manual_vs_ontology_default,unsupervised,0.0227,6.84,0.00000000000773
+manual_vs_ontology_bridged,unsupervised,0.0077,2.66,0.00776

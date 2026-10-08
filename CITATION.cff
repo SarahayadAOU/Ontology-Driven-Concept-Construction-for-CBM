@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper and the original UCI Gallstone dataset."
+title: "Ontology-Driven Concept Construction for Concept Bottleneck Models: Reproducibility Package"
+type: software
+authors:
+  - family-names: Ayad
+    given-names: Sarah
+  - family-names: Al-Jamimi
+    given-names: Hamdi A.
+year: 2026
+license: MIT
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"

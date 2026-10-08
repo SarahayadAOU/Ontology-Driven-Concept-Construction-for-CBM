@@ -1,0 +1,39 @@
+#,Dataset column,Bottom-up concept,Open-choice alternative,Evidence kind,Evidence,Paper's concept (Table 2a)
+2,Age,Demographic attributes,,ontology,"PATO:0001241 physical object quality, shared with Gender",Demographic-Comorbid
+3,Gender,Demographic attributes,,ontology,"PATO:0001241 physical object quality, shared with Age",Demographic-Comorbid
+4,Comorbidity,Diagnosed conditions,,domain,"no ontology match; grouped with the other condition flags by variable type (a per-subject diagnosis/condition record), not ontology evidence",Demographic-Comorbid
+5,Coronary Artery Disease (CAD),Diagnosed conditions,,ontology,MONDO:7770006 disease by body system or component,Demographic-Comorbid
+6,Hypothyroidism,Diagnosed conditions,,ontology,MONDO:0005151 endocrine system disorder (a child of disease-by-body-system),Demographic-Comorbid
+7,Hyperlipidemia,Diagnosed conditions,"Lipid panel (pairs with TC/LDL/HDL/Triglyceride, as the paper does)",ontology,"MONDO:0005066 metabolic disease, shared with Diabetes Mellitus — OPEN CHOICE: see note",Lipid Metabolism
+8,Diabetes Mellitus (DM),Diagnosed conditions,"Glycemic (pairs with Glucose, as the paper does)",ontology,"MONDO:0005066 metabolic disease, shared with Hyperlipidemia — OPEN CHOICE: see note",Glycemic
+9,Height,Whole-body size & composition,,ontology,CMO:0000011 whole body morphological measurement (parent of the calculated-weight branch),Demographic-Comorbid
+10,Weight,Whole-body size & composition,,ontology,CMO:0000012 body weight (parent of the calculated-weight branch),Adiposity
+11,Body Mass Index (BMI),Whole-body size & composition,,ontology,"CMO:0001196 calculated body weight measurement, shared with TBW, Lean Mass %",Adiposity
+12,Total Body Water (TBW),Whole-body size & composition,,ontology,"CMO:0001196 calculated body weight measurement, shared with BMI, Lean Mass %",Body Water
+13,Extracellular Water (ECW),Whole-body size & composition,,domain,no ontology match; grouped with Total Body Water as its sub-compartment,Body Water
+14,Intracellular Water (ICW),Whole-body size & composition,,domain,no ontology match; grouped with Total Body Water as its sub-compartment,Body Water
+15,Extracellular Fluid/Total Body Water (ECF/TBW),Whole-body size & composition,,domain,"no ontology match; grouped with Total Body Water, of which it is a ratio",Body Water
+16,Total Body Fat Ratio (TBFR) (%),Adiposity,,ontology,"CMO:0000089 body fat morphological measurement, shared with TFC",Adiposity
+17,Lean Mass (LM) (%),Whole-body size & composition,,ontology,"CMO:0001196 calculated body weight measurement, shared with BMI, TBW",Musculoskeletal
+18,Body Protein Content (Protein) (%),Musculoskeletal / tissue composition,,domain,"no strong ontology match (only a generic, rejected VT:0010120 protein amount); grouped with Bone/Muscle Mass by Tanita panel",Musculoskeletal
+19,Visceral Fat Rating (VFR),Adiposity,,domain,"uncertain in the CMO crosswalk; its rejected candidates (CMO:0000244/0002807/0002183) all sit under CMO:0000089, so it is placed here by that evidence even though no term was selected",Adiposity
+20,Bone Mass (BM),Musculoskeletal / tissue composition,,ontology,"VT:0015074 organ system trait, shared with Muscle Mass",Musculoskeletal
+21,Muscle Mass (MM),Musculoskeletal / tissue composition,,ontology,"VT:0015074 organ system trait, shared with Bone Mass",Musculoskeletal
+22,Obesity (%),Adiposity,,domain,no ontology match; grouped with the other Tanita adiposity outputs by panel,Adiposity
+23,Total Fat Content (TFC),Adiposity,,ontology,"CMO:0000089 body fat morphological measurement, shared with TBFR",Adiposity
+24,Visceral Fat Area (VFA),Adiposity,,domain,"uncertain in the CMO crosswalk; its rejected candidate CMO:0000244 sits under CMO:0000089, so it is placed here by that evidence even though no term was selected",Adiposity
+25,Visceral Muscle Area (VMA) (Kg),Musculoskeletal / tissue composition,,domain,"no ontology match (only an unrelated anatomical-structure term, UBERON:8600004); grouped with Bone/Muscle Mass by name and panel",Musculoskeletal
+26,Hepatic Fat Accumulation (HFA),Hepatobiliary,,ontology,CMO:0000021 body morphological measurement (broader match); grouped with the liver-panel labs by organ system,Hepatobiliary
+27,Glucose,Glycemic,,domain,shares only the generic CMO:0000023 blood chemistry measurement node with several unrelated analytes; Diabetes Mellitus placed with the other MONDO disease flags instead (see open choice),Glycemic
+28,Total Cholesterol (TC),Lipid panel,,ontology-healed,CMO nests TC one level shallower (CMO:0000119 blood lipoprotein level) than its panel-mates LDL/HDL; healed into the same panel,Lipid Metabolism
+29,Low Density Lipoprotein (LDL),Lipid panel,,ontology,"CMO:0002696 blood lipoprotein cholesterol level, shared with HDL",Lipid Metabolism
+30,High Density Lipoprotein (HDL),Lipid panel,,ontology,"CMO:0002696 blood lipoprotein cholesterol level, shared with LDL",Lipid Metabolism
+31,Triglyceride,Lipid panel,,ontology-healed,"CMO deliberately separates triglyceride (CMO:0000050 blood lipid measurement, a directly-measured lipid) from the lipoprotein-carried cholesterols; healed into the same clinically-ordered lipid panel",Lipid Metabolism
+32,Aspartat Aminotransferaz (AST),Hepatobiliary,,ontology-healed,CMO:0000023 blood chemistry measurement directly; healed with ALT (see note) as the same clinical liver-enzyme panel,Hepatobiliary
+33,Alanin Aminotransferaz (ALT),Hepatobiliary,,ontology-healed,"CMO nests ALT under CMO:0000064 blood enzyme activity level, one level deeper than its panel-mates AST/ALP; healed into the same panel",Hepatobiliary
+34,Alkaline Phosphatase (ALP),Hepatobiliary,,ontology-healed,"CMO:0000023 blood chemistry measurement directly, same node as AST",Hepatobiliary
+35,Creatinine,Renal function,,domain,"shares only the generic CMO:0000023 blood chemistry measurement node with several unrelated analytes; grouped with GFR by organ system, not by a specific shared ontology node",Renal Function
+36,Glomerular Filtration Rate (GFR),Renal function,,domain,"shares only the generic CMO:0000023 blood chemistry measurement node with several unrelated analytes; grouped with Creatinine by organ system, not by a specific shared ontology node",Renal Function
+37,C-Reactive Protein (CRP),Inflammatory / nutritional,,ontology,"CMO:0000028 blood protein measurement, shared with Hemoglobin",Inflammatory-Nutritional
+38,Hemoglobin (HGB),Inflammatory / nutritional,,ontology,"CMO:0000028 blood protein measurement, shared with CRP",Inflammatory-Nutritional
+39,Vitamin D,Inflammatory / nutritional,,domain,shares only the generic CMO:0000023 blood chemistry measurement node; pulled into this concept by nutritional-domain reasoning rather than ontology proximity,Inflammatory-Nutritional

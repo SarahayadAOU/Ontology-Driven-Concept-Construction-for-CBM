@@ -1,0 +1,14 @@
+metric,manual_supervised,ontology_default_supervised,ontology_bridged_supervised,manual_unsupervised,ontology_default_unsupervised,ontology_bridged_unsupervised
+AUC,0.844,0.856,0.861,0.769,0.747,0.762
+AUC_SD,0.006,0.009,0.009,0.008,0.009,0.008
+Accuracy,0.773,0.796,0.795,0.705,0.681,0.703
+Interpretability_tax,0.018,0.005,0.001,0.092,0.115,0.100
+Rank_SD,1.76,1.52,1.82,1.50,1.70,1.56
+Top_k_Jaccard,0.424,0.536,0.419,0.656,0.870,0.789
+Proper_AUC_for_leakage,0.844,0.856,0.861,0.769,0.747,0.762
+Leaky_full_data_encoder_AUC,0.874,0.896,0.898,0.780,0.761,0.776
+Leakage_AUC_inflation,0.030,0.039,0.038,0.011,0.014,0.014
+Raw_ECE,0.046,0.057,0.058,0.054,0.053,0.050
+Conformal_coverage_90,0.937,0.935,0.936,0.928,0.932,0.925
+Singleton_fraction,0.460,0.497,0.496,0.350,0.319,0.335
+Selective_accuracy_70,0.852,0.870,0.874,0.767,0.758,0.767

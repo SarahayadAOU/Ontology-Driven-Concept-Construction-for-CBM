@@ -1,0 +1,60 @@
+{
+  "Demographic attributes": [
+    "Age",
+    "Gender"
+  ],
+  "Diagnosed conditions": [
+    "Comorbidity",
+    "Coronary Artery Disease (CAD)",
+    "Hypothyroidism",
+    "Hyperlipidemia",
+    "Diabetes Mellitus (DM)"
+  ],
+  "Whole-body size & composition": [
+    "Height",
+    "Weight",
+    "Body Mass Index (BMI)",
+    "Total Body Water (TBW)",
+    "Extracellular Water (ECW)",
+    "Intracellular Water (ICW)",
+    "Extracellular Fluid/Total Body Water (ECF/TBW)",
+    "Lean Mass (LM) (%)"
+  ],
+  "Adiposity": [
+    "Total Body Fat Ratio (TBFR) (%)",
+    "Visceral Fat Rating (VFR)",
+    "Obesity (%)",
+    "Total Fat Content (TFC)",
+    "Visceral Fat Area (VFA)"
+  ],
+  "Musculoskeletal / tissue composition": [
+    "Body Protein Content (Protein) (%)",
+    "Bone Mass (BM)",
+    "Muscle Mass (MM)",
+    "Visceral Muscle Area (VMA) (Kg)"
+  ],
+  "Hepatobiliary": [
+    "Hepatic Fat Accumulation (HFA)",
+    "Aspartat Aminotransferaz (AST)",
+    "Alanin Aminotransferaz (ALT)",
+    "Alkaline Phosphatase (ALP)"
+  ],
+  "Glycemic": [
+    "Glucose"
+  ],
+  "Lipid panel": [
+    "Total Cholesterol (TC)",
+    "Low Density Lipoprotein (LDL)",
+    "High Density Lipoprotein (HDL)",
+    "Triglyceride"
+  ],
+  "Renal function": [
+    "Creatinine",
+    "Glomerular Filtration Rate (GFR)"
+  ],
+  "Inflammatory / nutritional": [
+    "C-Reactive Protein (CRP)",
+    "Hemoglobin (HGB)",
+    "Vitamin D"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "concept_groups": {
+    "Demographic attributes": [
+      "Age",
+      "Gender"
+    ],
+    "Diagnosed conditions": [
+      "Comorbidity",
+      "Coronary Artery Disease (CAD)",
+      "Hypothyroidism",
+      "Hyperlipidemia",
+      "Diabetes Mellitus (DM)"
+    ],
+    "Whole-body size & composition": [
+      "Height",
+      "Weight",
+      "Body Mass Index (BMI)",
+      "Total Body Water (TBW)",
+      "Extracellular Water (ECW)",
+      "Intracellular Water (ICW)",
+      "Extracellular Fluid/Total Body Water (ECF/TBW)",
+      "Lean Mass (LM) (%)"
+    ],
+    "Adiposity": [
+      "Total Body Fat Ratio (TBFR) (%)",
+      "Visceral Fat Rating (VFR)",
+      "Obesity (%)",
+      "Total Fat Content (TFC)",
+      "Visceral Fat Area (VFA)"
+    ],
+    "Musculoskeletal / tissue composition": [
+      "Body Protein Content (Protein) (%)",
+      "Bone Mass (BM)",
+      "Muscle Mass (MM)",
+      "Visceral Muscle Area (VMA) (Kg)"
+    ],
+    "Hepatobiliary": [
+      "Hepatic Fat Accumulation (HFA)",
+      "Aspartat Aminotransferaz (AST)",
+      "Alanin Aminotransferaz (ALT)",
+      "Alkaline Phosphatase (ALP)"
+    ],
+    "Glycemic": [
+      "Glucose"
+    ],
+    "Lipid panel": [
+      "Total Cholesterol (TC)",
+      "Low Density Lipoprotein (LDL)",
+      "High Density Lipoprotein (HDL)",
+      "Triglyceride"
+    ],
+    "Renal function": [
+      "Creatinine",
+      "Glomerular Filtration Rate (GFR)"
+    ],
+    "Inflammatory / nutritional": [
+      "C-Reactive Protein (CRP)",
+      "Hemoglobin (HGB)",
+      "Vitamin D"
+    ]
+  },
+  "open_choices": {
+    "Hyperlipidemia": {
+      "default": "Diagnosed conditions",
+      "alternative": "Lipid panel (pairs with TC/LDL/HDL/Triglyceride, as the paper does)"
+    },
+    "Diabetes Mellitus (DM)": {
+      "default": "Diagnosed conditions",
+      "alternative": "Glycemic (pairs with Glucose, as the paper does)"
+    }
+  },
+  "notes": "Derived bottom-up from CMO/MONDO/OBA-PATO/VT ontology ancestor closures, with domain-only backfill for the 9 variables that had no ontology match, and curation-artifact healing for same-panel variables the ontology split (see evidence_kind per variable in concept_rows.csv). Hyperlipidemia and Diabetes Mellitus have an open placement choice; see open_choices."
+}

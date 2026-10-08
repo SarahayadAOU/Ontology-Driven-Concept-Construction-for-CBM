@@ -1,0 +1,8 @@
+Official UCI dataset page:
+https://archive.ics.uci.edu/dataset/1150/gallstone-1
+
+Official UCI download archive used by the website:
+https://cdn.uci-ics-mlr-prod.aws.uci.edu/1150/gallstone-1.zip
+
+Run `python download_data.py` after installing requirements to create:
+data/gallstone_uci.csv
